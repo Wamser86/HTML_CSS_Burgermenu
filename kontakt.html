@@ -1,0 +1,87 @@
+<HTML>
+<head>
+<link href="css.css" rel="stylesheet">
+
+</head>
+<body>
+    <br>
+    <br>
+    <center><img src="Logo.png" /></center>
+    <br>
+    <input type="checkbox" id="toggle">
+
+    <nav>
+
+        <a class="navbar-brand" href="#">
+            AUTO DEAL
+        </a>
+
+        <label class="navbar-toggler" for="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="neu.html">Neu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="gebraucht.html" >Gebraucht</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="kontakt.html">Kontakt</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="anfahrt.html">Anfahrt</a>
+            </li>
+        </ul>
+
+    </nav>
+        <div id="contact-form" class="clearfix">
+            <h1>Kontakt</h1>
+            <h2>Füllen Sie unser Kontakt Formular hier aus.</h2>
+            <ul id="errors" class="">
+                <li id="info">Es bestehen Probleme mit deiner Nachricht bitte schau noch einmal nach.</li>
+            </ul>
+            <p id="success">Danke für deine Nachricht wir werden uns schnellst möglich melden.</p>
+            <form method="post">
+                <label for="name">Name: <span class="required">*</span></label>
+                <input type="text" id="name" name="name" value="" placeholder="Sebastian Wamser" required="required" autofocus="autofocus" />
+                
+                <label for="email">Email Addresse: <span class="required">*</span></label>
+                <input type="email" id="email" name="email" value="" placeholder="Wamser@test.de" required="required" />
+                
+                <label for="telephone">Telefon: </label>
+                <input type="tel" id="telephone" name="telephone" value="" placeholder="0123 - 45678910" />
+                
+                <label for="enquiry">um was geht es? </label>
+                <select id="enquiry" name="enquiry">
+                    <option value="Allgemein">General</option>
+                    <option value="Kauf">Sales</option>
+                    <option value="support">Support</option>
+                </select>
+                
+                <label for="message">Nachricht: <span class="required">*</span></label>
+                <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required="required" data-minlength="20"></textarea>
+                
+                <span id="loading"></span>
+                <input type="submit" value="Abschicken!" id="submit-button" />
+                <p id="req-field-desc"><span class="required">*</span> Pflichtfelder biite ausfüllen...</p>
+            </form>
+        </div>
+
+
+        <footer class="container">
+            <center>
+                <h4><a href="Impressum.html">Impressum</a> &nbsp; &nbsp;<a href="Datenschutz.html">Datenschutz</a></h4>
+                <h3>www.Auto-Deal.de</h3>
+            </center>
+        </footer>
+        
+    </body>
+
+</HTML>
