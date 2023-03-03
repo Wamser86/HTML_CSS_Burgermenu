@@ -9,8 +9,9 @@ body{
     background-image: url("BG.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+/*
     background-attachment: fixed;
-
+*/
 }
 
 
@@ -23,29 +24,7 @@ table {
     background-color: white;
 }
 
-.button {
-    background-color: #a50000;
-    border: 10px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
 
-  .button1 {
-    background-color: rgb(134, 2, 2); 
-    color: black; 
-    border: 2px solid #860000;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    
-  }
-  
-  .button1:hover {
-    background-color: #920000;
-    color: white;
-  }
 
     #contact-form {
     background-color:#F2F7F9;
@@ -117,7 +96,6 @@ table {
     margin-bottom:0px;
     margin-right:6px;
     background-color:#8FB5C1;
-    -moz-border-radius:8px;
 }
 
 #contact-form #submit-button:hover {
@@ -309,6 +287,14 @@ input.placeholder-text, textarea.placeholder-text  {
 
 }
 
+.container2{
+    background-color: #ffffff;
+    position:absolute;
+    top: 0;
+    width: 100%;
+  
+  }
+
     
 a{
     color:#ffffff
@@ -331,12 +317,15 @@ a:hover{
 }
 
 nav {
+    position: absolute;
     display: flex;
     justify-content: space-between;
     padding: 0 15%;
     height: 75px;
+    width: 70%;                    /* Ohne width ist der kasten nur so groß wie nötig, d.h. meist zu kurz */
     line-height: 75px;
     background: #404040;
+    /*border:3px solid Orange;*/     /* Debug */
 }
 
 nav .navbar-brand {
@@ -344,16 +333,19 @@ nav .navbar-brand {
     font-size: 28px;
     font-weight: 500;
     letter-spacing: .5px;
+    /*border:2px solid Yellow;*/    /*  Debug */
 }
 
 nav .nav-list {
     display: flex;
+    /*border:2px solid Red; */     /* Debug */
+    
 }
 
 nav .nav-list .nav-item {
     cursor: pointer;
     height: 100%;
-    padding: 0 30px;
+    padding: 0 20px;
     transition: .4s;
 }
 
@@ -385,8 +377,8 @@ nav .nav-list .nav-link {
         display: grid;
         position: absolute;
         background: #404040;
-        width: 100%;
-        top: 75px;
+        width: 220px;
+        top: 220px;
         left: 0;
         transform: translateY(-100%);
         z-index: -1;
@@ -394,7 +386,7 @@ nav .nav-list .nav-link {
     }
 
     nav .nav-list .nav-item {
-        padding-left: 35px;
+        padding-left: 75px;
     }
 
     nav .navbar-toggler {
